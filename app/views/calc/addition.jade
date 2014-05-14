@@ -1,0 +1,15 @@
+extends ../shared/template
+
+block content
+  h1 Calc : Sum
+
+  form#sum
+    input(type='text', name='num1')
+    | +
+    input(type='text', name='num2')
+    button#add Add
+
+  #result
+
+block scripts
+  script(src='/js/es6/compiled/sum.js')
